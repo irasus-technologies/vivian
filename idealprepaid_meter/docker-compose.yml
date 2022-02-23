@@ -1,0 +1,21 @@
+version: "3"
+
+volumes:
+
+    emails:
+
+    vivian__idealprepaid_meter:
+
+services:
+
+    vivian__idealprepaid_meter:
+
+        build: .
+
+        restart: unless-stopped
+
+        container_name: vivian__idealprepaid_meter
+
+        volumes:
+            - "emails:/source"
+            - "vivian__idealprepaid_meter:/destination"
