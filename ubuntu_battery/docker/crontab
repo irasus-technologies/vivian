@@ -1,0 +1,2 @@
+* * * * * (sleep 30; sh /read.sh)
+* * * * * (sh /read.sh)

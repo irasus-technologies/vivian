@@ -1,0 +1,19 @@
+version: "3"
+
+volumes:
+
+    vivian__ubuntu_battery:
+
+services:
+
+    vivian__ubuntu_battery:
+
+        build: .
+
+        restart: unless-stopped
+
+        container_name: vivian__ubuntu_battery
+
+        volumes:
+            - "/sys/class/power_supply/BAT0:/source"
+            - "vivian__ubuntu_battery:/destination"
